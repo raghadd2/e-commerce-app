@@ -22,7 +22,6 @@ class OtpScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(AppImages.loginImg),
-              30.hGap,
               Text(
                 "تسجيل الدخول",
                 style: Theme.of(context)
@@ -31,7 +30,7 @@ class OtpScreen extends StatelessWidget {
                     .copyWith(color: Colors.black87)
                     .copyWith(fontWeight: FontWeight.w700),
               ),
-              5.hGap,
+              15.hGap,
               Pinput(
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -50,7 +49,7 @@ class OtpScreen extends StatelessWidget {
                   height: 60,
                 ),
               ),
-              10.hGap,
+              15.hGap,
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
@@ -67,7 +66,7 @@ class OtpScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              5.hGap,
+              15.hGap,
               SizedBox(
                 width: MediaQuery.of(context).size.width,
                 height: 50,

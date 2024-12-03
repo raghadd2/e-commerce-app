@@ -13,7 +13,7 @@ class NavBarWidget extends ConsumerWidget {
     final index = ref.watch(dashboardProvider);
     return Container(
       // color: Color(0xff053262),
-      height: 50,
+      height: 60,
       child: Container(
         decoration: BoxDecoration(
           border: Border(

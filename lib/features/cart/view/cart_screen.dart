@@ -136,8 +136,11 @@ class CartScreen extends StatelessWidget {
                   onPressed: () {
                     context.pushNamed(NameRoutes.checkoutNameRoute);
                   },
-                  child: Text(context.tr.checkout),
+                  child: Text(
+                    context.tr.checkout,
+                  ),
                 ),
+                10.hGap,
               ],
             ),
           ),

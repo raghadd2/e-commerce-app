@@ -21,21 +21,15 @@ class LoginScreen extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Image.asset(AppImages.loginImg),
-                24.hGap,
                 Text('تسجيل الدخول',
                     style: context.text.headlineMedium!
                         .copyWith(color: Colors.white)),
-                8.hGap,
-                Text(
-                  'اهلا بك في تطبيق المراقب',
-                  style: context.text.bodyMedium!.copyWith(color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                24.hGap,
+                15.hGap,
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     TextFormField(
+                      keyboardType: TextInputType.phone,
                       textInputAction: TextInputAction.done,
                       validator: (value) => AppValidation.validatePhoneNumber(
                           context, value ?? ""),
@@ -45,12 +39,12 @@ class LoginScreen extends ConsumerWidget {
                         suffixIcon: Icon(Icons.phone, color: Colors.grey),
                       ),
                     ),
-                    20.hGap,
+                    15.hGap,
                     ElevatedButton(
                       onPressed: () {
                         context.goNamed(NameRoutes.otpNameRoute);
                       },
-                      child: const Text('Login'),
+                      child: const Text('تسجيل الدخول'),
                     ),
                   ],
                 ),
